@@ -1,0 +1,354 @@
+@import "variables";
+@import "normalize";
+
+@font-face{
+    font-family: 'FOWVIEL';
+    src: url('../font/FOWVIEL_1.TTF');
+    font-weight: normal;
+    font-style: normal;
+   }
+
+@font-face{
+    font-family: 'ARNO';
+    src: url('../font/ArnoPro-BoldSubhead.otf');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+@font-face{
+    font-family: 'FREEST';
+    src: url('../font/FREESCPT.TTF');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+a {
+    color: currentColor;
+    text-decoration: none;        
+    }
+
+html, body {
+    font-size: 10px;
+    background-color: #000;
+    font-family: 'FOWVIEL';
+    font-style: normal;
+    }
+
+img {
+    display: block;
+    }
+
+.wrap { //Блок-ОБЕРТКА - задает макс ширину КОНТЕНТА
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    position: relative;
+    }
+
+//*******************************************
+
+.hero{
+    min-height: 792px;
+    max-width: 1980px;
+    margin: 0 auto;
+    background-image: url(../img/hero_burger_pic.jpg);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:  cover;
+    }
+
+.hero__logo-and-phone{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding: 3.1rem;
+    }
+
+.hero__logo{
+    transition: ease-in-out 1s;
+    &:hover{
+        transform: rotate(22.5deg);
+        transition: ease-in-out 1s;
+        }
+        img{
+            width: 19.8rem;
+            }
+}     
+
+.hero__phone{
+    padding-top: 2rem;
+    padding-left: 3rem;
+    font-size: 2.4rem;
+    color: #e1ddd4;
+    }
+
+.red-text{
+    color: #e34c3b;
+    font-size: 4rem;
+    }
+
+.hero__banner{
+    font-size: 3rem;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 69rem;
+    }
+
+.hero__banner-table{
+    border: 0.4rem solid #645c4b ;
+    margin: 0.2rem;
+    min-height: 2.3rem;
+    min-width: 1.9rem;
+    }   
+
+.table1_2, .table2_2, .table3_2{
+    min-width: 66rem;
+    }
+
+.table2_2{
+    padding: 5.5rem;
+    }
+
+.hero__banner-text{
+    font-family: 'ARNO';    
+    font-size: 9.2rem;
+    font-weight: 600; 
+    color: #e2d0a9;
+    text-transform: uppercase;
+    line-height: 8rem;
+    }
+
+.big{
+    font-size: 11.7rem; 
+    }
+
+.auth{
+    font-family: 'FREEST';
+    line-height: 4rem;
+    font-size: 7rem;
+    font-weight: 100; 
+    color: #e1ddd4;
+    text-transform: none;
+    }
+
+.table1_1{
+    border-top: none; 
+    //border-bottom: none; 
+   border-left: none; 
+   //border-right: none; 
+}    
+
+.table1_2{
+   border-top: none; 
+   //border-bottom: none; 
+   //border-left: none; 
+   border-right: none; 
+}    
+
+.table2_1{
+   //border-top: none; 
+   //border-bottom: none; 
+   border-left: none; 
+   //border-right: none; 
+}    
+
+.table2_2{
+   //border-top: none; 
+   //border-bottom: none; 
+   //border-left: none; 
+   border-right: none; 
+}    
+
+.table3_1{
+   //border-top: none; 
+   border-bottom: none; 
+   border-left: none; 
+   //border-right: none; 
+}    
+
+.table3_2{
+   //border-top: none; 
+   border-bottom: none; 
+   //border-left: none; 
+   border-right: none; 
+}    
+
+    
+
+
+//*******************************************
+.header{
+   // width: 100%;
+    max-width: 1980px;
+    margin: 0 auto;
+    background-color: #777168;
+    position: relative;
+    
+
+    &:before {
+        background-color: #dfdbd2;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        content: '';
+        }
+
+    &:after {
+        background-color: #dfdbd2;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        top: 4px;
+        left: 0;
+        content: '';
+        }
+    }
+
+.header__menu-line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 65px;
+    list-style-type: none;
+    }
+
+
+.header__link{
+    text-decoration: none;     
+    display: block;
+    font-size: 3rem;
+    font-weight: 400; 
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: ease-out 0.5s;
+    &:hover{
+        color: rgb(0, 0, 0);
+        transition: ease-out 0.5s;
+        }
+    }
+
+
+.menu-img-rotate{ 
+    display: inline;
+    z-index: 99;
+    transition: ease-in-out 1s;
+    &:hover{
+        transform: rotate(22.5deg);
+        transition: ease-in-out 1s;
+        }
+    }
+
+//**********************************************************     
+
+.about{
+    //min-height: 792px;
+    max-width: 1980px;
+    margin: 0 auto;
+    background-image: url(../img/pattern.jpg);
+    //background-repeat:no-repeat;
+    background-position: center center;
+    //background-size:  cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+
+    
+
+   //  &::before{
+   //     //position: absolute;
+   //     display: inline;
+   //     position: relative;
+   //     content: "";
+   //     top: 0;
+   //     right: 0;
+   //     max-width: 1980px;
+   //     width: 100%;
+   //     height: 42.2rem;
+   //     background-image: url(../img/flower2.png);
+   //     background-repeat: no-repeat;
+   //     background-position: top right;
+   
+   //  }
+
+    
+    }
+
+.title-section{
+    font-size: 10rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    color: #777168;
+    position: relative;
+    left:-3rem;
+    
+    &::after{
+        position: absolute;
+        content: "";
+        bottom: -1rem;
+        left: 0;
+        width: 100%;
+        height: 4.8rem;
+        background-image: url(../img/wave.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        }
+    }     
+
+.about__before{
+    width: 100%;
+    background-image: url(../img/flower2.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    }
+
+.about__after{
+    width: 100%;
+    background-image: url(../img/flower1.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    }
+
+.about__description-section{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    }     
+
+.about__img{
+    background-image: url(../img/burger.png);
+    background-repeat: no-repeat;
+    height: 65rem;
+    //min-width: 46.5rem;
+    //max-width: 56.3rem;
+    width: 150%;
+    //background-position: center center;
+    //position: relative;
+    }
+
+.about__text-and-item{
+    display: flex;
+    flex-direction: column;
+    }
+
+.about__text{
+    width: 100%;
+    font-size: 2.5rem;
+    p{
+        padding: 1rem;
+        }
+    }
+
